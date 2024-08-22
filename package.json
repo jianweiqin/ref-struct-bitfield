@@ -1,0 +1,35 @@
+{
+	"name": "ref-struct-bitfield",
+	"version": "25.9.0",
+	"description": "Creates C `struct` instances on `Buffer`s. Supports `union`s and bitfields.",
+	"keywords": [
+		"struct", "union", "bitfield",
+		"ffi", "ref",
+		"abi", "c", "c++", "cpp", "cplusplus"
+	],
+	"author": "Jianwei Qin <304586351@qq.com>",
+	"contributors": [
+		"Anna Henningsen <anna@addaleax.net>"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/jianweiqin/ref-struct-bitfield.git"
+	},
+	"main": "./src/struct.js",
+	"exports": {
+		".": "./src/struct.js",
+		"./union": {
+			"default": "./src/union.js"
+		}
+	},
+	"dependencies": {
+		"debug": "^4.3.1"
+	},
+	"devDependencies": {
+		"ref-napi": "^3.0.3"
+	},
+	"engines": {
+		"node": ">=16"
+	}
+}
