@@ -48,6 +48,7 @@ Write the javascript code:
 ```js
 const ref = require("ref-napi");
 const struct = require("ref-struct-bitfield")(ref);
+const bitfield = struct.bitfield;
 
 const S = struct({
 	a: bitfield(ref.types.int64, 7),
@@ -108,6 +109,7 @@ console.log(S.alignment);   // 8
 ```js
 const ref = require("ref-napi");
 const struct = require("ref-struct-bitfield")(ref);
+const bitfield = struct.bitfield;
 const union = require("ref-struct-bitfield/union")(ref);
 
 const U = union({
